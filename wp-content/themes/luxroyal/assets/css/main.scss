@@ -385,5 +385,103 @@ hr{
             }
         }
     }
+    .tag-list{
+        li{
+            border: 1px solid #aaaaaa;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 30px;
+            
+            a {
+                display: inline-block;
+                padding: 0 15px;
+            }
+            &:hover a{
+                color: #c3142d;
+
+            }
+            &:hover{
+                border: 1px solid #c3142d;
+                
+            }
+            
+        }
+    }
+    .news-list{
+        li{
+           
+            margin-bottom: 30px;
+            
+            .con-warp{
+                height: 0;
+                padding-bottom: 56%;
+                position: relative;
+                overflow: hidden;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+            .caption{
+                cursor: pointer;
+                color: #ffffff;
+                position: absolute;
+                padding: 20px 10px;
+                bottom: 0;
+                background: #333333;
+                background:rgb(3,3,3);  
+                background: transparent\9;  
+                background:rgba(0,0,0,0.6);  
+                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);  
+                zoom: 1;  
+                width: 100%;
+                
+                h2{
+                    font-size: 25px;
+                    margin-bottom: 5px;
+                }
+                .dtl{
+                    transition: all 0.2s;
+                    margin-bottom: 10px;
+                    overflow: hidden;
+                    height: 0;
+                    opacity: 0;
+                }
+          
+                
+                &:hover .dtl{
+                    opacity: 1;
+                    display: block;
+                    height: 105px;
+                    
+                }
+                
+                &:hover{
+                    //height: 200px;
+                    
+                }
+            }
+            &.xxx{
+                .con-warp{
+                    padding-bottom: 116%;
+                    
+                }
+                
+            }
+    
+            
+        }
+        
+    }
+    
+}
+
+.news-banner {
+   background: url(images/bg-news.png) center center no-repeat;
+    height: 245px;
+    width: 100%;
     
 }

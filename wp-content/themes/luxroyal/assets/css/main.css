@@ -973,5 +973,76 @@ hr {
       .content .content-news .content-news-right h1.text-title {
         font-size: 25px;
         margin-bottom: 20px; }
+  /* line 389, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  .content .tag-list li {
+    border: 1px solid #aaaaaa;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 30px; }
+    /* line 398, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .content .tag-list li a {
+      display: inline-block;
+      padding: 0 15px; }
+    /* line 402, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .content .tag-list li:hover a {
+      color: #c3142d; }
+    /* line 406, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .content .tag-list li:hover {
+      border: 1px solid #c3142d; }
+  /* line 414, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  .content .news-list li {
+    margin-bottom: 30px; }
+    /* line 418, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .content .news-list li .con-warp {
+      height: 0;
+      padding-bottom: 56%;
+      position: relative;
+      overflow: hidden; }
+    /* line 424, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .content .news-list li img {
+      width: 100%;
+      height: auto; }
+    /* line 428, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .content .news-list li .caption {
+      cursor: pointer;
+      color: #ffffff;
+      position: absolute;
+      padding: 20px 10px;
+      bottom: 0;
+      background: #333333;
+      background: #030303;
+      background: transparent\9;
+      background: rgba(0, 0, 0, 0.6);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
+      zoom: 1;
+      width: 100%; }
+      /* line 442, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+      .content .news-list li .caption h2 {
+        font-size: 25px;
+        margin-bottom: 5px; }
+      /* line 446, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+      .content .news-list li .caption .dtl {
+        transition: all 0.2s;
+        margin-bottom: 10px;
+        overflow: hidden;
+        height: 0;
+        opacity: 0; }
+      /* line 455, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+      .content .news-list li .caption:hover .dtl {
+        opacity: 1;
+        display: block;
+        height: 105px; }
+    /* line 468, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .content .news-list li.xxx .con-warp {
+      padding-bottom: 116%; }
+
+/* line 482, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+.news-banner {
+  background: url(images/bg-news.png) center center no-repeat;
+  height: 245px;
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
