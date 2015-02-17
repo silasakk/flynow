@@ -1039,4 +1039,10 @@ hr {
     .content .news-list li.xxx .con-warp {
       padding-bottom: 116%; }
 
+/* line 482, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+.news-banner {
+  background: url(images/bg-news.png) center center no-repeat;
+  height: 245px;
+  width: 100%; }
+
 /*# sourceMappingURL=main.css.map */
