@@ -425,6 +425,10 @@ textarea {
 .dyellow {
   color: #f6921f; }
 
+/* line 22, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/_color.scss */
+.text-title {
+  color: #3b4a58; }
+
 @font-face {
   font-family: 'helvethaica';
   src: url('helvethaica/dbhelvethaicamonx.eot');
@@ -605,29 +609,29 @@ img {
   /* IE6 & 7 */
   zoom: 1; }
 
-/* line 10, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 11, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 strong {
   font-family: univers-bold, helvethaica; }
 
-/* line 13, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 14, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 body {
   font-family: univers, helvethaica; }
 
-/* line 18, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 19, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 hr {
   border: solid #dedede;
   border-width: 1px 0 0;
   clear: both;
-  margin: 30px -5px 29px -5px;
+  margin: 30px 0;
   height: 0; }
 
-/* line 25, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 26, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .header-bar {
   height: 25px;
   background-color: #525d67;
   color: #ffffff; }
 
-/* line 32, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 33, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .search-field {
   float: left;
   width: 200px !important;
@@ -639,7 +643,7 @@ hr {
   font-size: 12px;
   display: inline-block; }
 
-/* line 44, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 45, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .btn-s {
   font-size: 110%;
   height: 25px;
@@ -649,17 +653,17 @@ hr {
   color: #ffffff;
   display: inline-block; }
 
-/* line 54, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 55, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .head-tools {
   float: right; }
 
-/* line 59, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 60, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .sw-lang {
   margin-left: 5px;
   float: right;
   padding-top: 2px; }
 
-/* line 65, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 66, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .btn-lang {
   display: inline-block;
   height: 20px;
@@ -668,116 +672,116 @@ hr {
   text-align: center;
   line-height: 20px;
   cursor: pointer; }
-  /* line 74, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 75, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .btn-lang.active {
     border: 1px solid #ffffff; }
 
-/* line 81, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 82, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 #logo {
   float: left;
   background: url(images/logo-lux-royal.png);
   width: 116px;
   height: 74px; }
 
-/* line 88, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 89, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .time-info {
   font-size: 11px;
   text-align: right;
   margin-bottom: 0px !important; }
 
-/* line 94, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 95, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .information {
   float: right;
   display: inline-block;
   color: #525d67;
   font-size: 1.2em; }
-  /* line 99, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 100, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .information strong {
     margin: 0 5px;
     display: inline-block;
     width: 125px; }
-    /* line 103, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 104, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     .information strong:after {
       content: ":";
       float: right; }
-  /* line 108, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 109, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .information p {
     margin-bottom: 5px; }
-  /* line 112, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 113, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .information span {
     float: right; }
-    /* line 114, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 115, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     .information span img {
       text-align: right;
       height: 15px;
       margin-left: 5px; }
 
-/* line 122, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 123, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .head-con {
   display: inline-block;
   width: 100%;
   padding-top: 15px;
   padding-bottom: 10px; }
 
-/* line 129, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 130, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 #nav {
   height: 53px;
   background-color: #c3142d;
   color: #ffffff; }
-  /* line 133, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 134, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   #nav li {
     float: left;
     height: 53px;
     padding: 0 20px; }
-    /* line 137, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 138, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     #nav li.active, #nav li:hover {
       background-color: #3b4a58; }
-    /* line 140, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 141, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     #nav li a {
       font-size: 14px;
       line-height: 53px;
       color: #ffffff; }
 
-/* line 149, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 150, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .thumb-recomend {
   overflow: hidden;
   height: 166px;
   margin-bottom: 10px; }
-  /* line 153, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 154, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .thumb-recomend img {
     width: 100%;
     height: auto; }
 
-/* line 159, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 160, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .detail-recomend {
   position: relative;
   border-left: 4px solid #c2132c;
   height: 60px;
   padding: 10px 0px 10px 10px; }
-  /* line 165, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 166, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .detail-recomend .detail-recomend-title {
     font-size: 1.3em;
     color: #473921; }
-  /* line 169, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 170, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .detail-recomend .detail-recomend-dtl {
     font-size: 0.7em; }
 
-/* line 174, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 175, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .detail-recomend-more {
   position: absolute;
   right: 0;
   top: 15px; }
 
-/* line 180, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 181, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .thumb-news {
   overflow: hidden;
   max-height: 370px;
   position: relative; }
-  /* line 184, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 185, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .thumb-news img {
     width: 100%;
     height: auto; }
-  /* line 188, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 189, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .thumb-news .over-title {
     z-index: 2;
     position: absolute;
@@ -786,16 +790,16 @@ hr {
     bottom: 0;
     left: 0;
     padding: 20px; }
-    /* line 196, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 197, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     .thumb-news .over-title .thumb-news-title {
       font-size: 1.2em;
       color: #ffffff;
       margin-bottom: 10px; }
-    /* line 201, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 202, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     .thumb-news .over-title .thumb-news-dtl {
       font-size: 1em;
       color: #ffffff; }
-  /* line 206, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 207, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .thumb-news .bg-bl {
     position: absolute;
     opacity: 0.9;
@@ -805,7 +809,7 @@ hr {
     width: 100%;
     bottom: 0;
     left: 0; }
-  /* line 216, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 217, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .thumb-news .bg-rd {
     position: absolute;
     opacity: 0.9;
@@ -816,61 +820,61 @@ hr {
     bottom: 0;
     left: 0; }
 
-/* line 228, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 229, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .home-news {
   margin-top: 10px; }
 
-/* line 233, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 234, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .home-news-top {
   margin-bottom: 20px; }
-  /* line 235, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 236, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .home-news-top h2 {
     color: #1a2b39; }
 
-/* line 241, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 242, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .listnews {
   margin: 0 -15px; }
-  /* line 243, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 244, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .listnews li {
     margin-bottom: 15px; }
 
-/* line 248, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 249, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 #footer {
   background: #f8f8f8;
   color: #5c646d;
   padding-top: 20px; }
-  /* line 252, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 253, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   #footer ul ul {
     margin-top: 10px; }
-  /* line 255, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 256, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   #footer li a {
     color: #5c646d;
     font-size: 0.8em; }
 
-/* line 261, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 262, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .foot-contact-us {
   margin-top: 10px;
   font-size: 0.7em;
   font-weight: bold; }
-  /* line 265, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 266, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .foot-contact-us span {
     display: inline-block;
     line-height: 1.5em;
     margin-bottom: 5px; }
 
-/* line 273, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 274, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .fol {
   margin-top: 10px; }
-  /* line 275, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 276, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .fol span {
     width: 100%;
     font-size: 1.3em;
     text-align: left; }
-  /* line 281, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 282, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .fol hr {
     margin: 5px 0px; }
 
-/* line 287, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 288, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .foot-sitemap {
   display: inline-block;
   height: 21px;
@@ -880,19 +884,19 @@ hr {
   text-align: center;
   margin-bottom: 10px; }
 
-/* line 297, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 298, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .foot2 {
   margin-top: -60px;
   font-size: 0.7em; }
-  /* line 300, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 301, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .foot2 p {
     float: left;
     color: #717b85; }
-  /* line 304, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 305, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .foot2 img {
     float: right; }
 
-/* line 309, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 310, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .footer-end {
   background: #c3142d;
   color: #ffffff;
@@ -902,185 +906,72 @@ hr {
   font-size: 0.8em; }
 
 /* line 318, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-.breadcrumb {
+.content {
   background: #f8f8f8;
-  height: 84px;
-  color: #3b4a58;
-  line-height: 84px; }
-  /* line 324, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-  .breadcrumb .product-title {
-    float: left;
-    display: inline-block; }
-  /* line 328, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-  .breadcrumb .product-breadcrumb {
-    display: inline-block;
-    float: right; }
-    /* line 331, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-    .breadcrumb .product-breadcrumb li {
-      float: left; }
-      /* line 333, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-      .breadcrumb .product-breadcrumb li:before {
-        content: "/";
-        float: right;
-        margin: 0 10px; }
-
-/* line 342, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-.product-desc {
-  font-size: 1.2em;
-  line-height: 1.6em;
-  padding: 20px 0; }
-  /* line 346, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-  .product-desc h1.product-name {
-    color: #b8142b;
-    font-size: 1.5em;
-    border-bottom: 2px solid #cccccc;
-    margin-bottom: 20px; }
-  /* line 352, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-  .product-desc h2.product-name {
-    color: #3b4a58;
-    font-weight: bold;
-    font-size: 1.4em;
-    border-bottom: 2px solid #cccccc; }
-
-/* line 360, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-.product-images {
-  border: 1px solid #cccccc;
-  margin-left: -10px;
-  text-align: center;
-  padding: 20px; }
-  /* line 370, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-  .product-images .product-image-feature img {
+  line-height: normal;
+  color: #777777;
+  font-size: 15px; }
+  /* line 323, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  .content p {
+    line-height: 150%; }
+  /* line 326, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  .content img {
     max-width: 100%;
     height: auto; }
-  /* line 375, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-  .product-images .product-image-list {
-    margin-top: 20px;
-    position: relative; }
-    /* line 378, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-    .product-images .product-image-list li {
-      height: 65px;
-      margin: 0 10px; }
-
-/* line 385, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-.product-content .short-desc {
-  padding: 10px 0;
-  border-bottom: 1px solid #cccccc; }
-/* line 391, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-.product-content .model {
-  padding: 10px 0;
-  border-bottom: 1px solid #cccccc;
-  font-size: 1.3em;
-  color: #4b4b4b; }
-/* line 397, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-.product-content .desc-content {
-  margin-top: 20px;
-  background-color: rgba(240, 240, 240, 0.83);
-  padding: 40px 20px;
-  color: #353535;
-  line-height: 1.5em;
-  margin-bottom: 20px; }
-  /* line 405, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-  .product-content .desc-content p.title {
-    font-size: 1.3em;
-    color: #353535;
-    margin-bottom: 20px; }
-
-/* line 414, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-.request-demo-btn {
-  display: inline-block;
-  height: 60px;
-  width: 225px;
-  background-color: #ae0c2a;
-  line-height: 60px;
-  font-size: 1.2em;
-  color: #ffffff;
-  text-align: center;
-  width: 225px; }
-  /* line 426, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-  .request-demo-btn img {
-    margin-top: 5px;
-    margin-right: 10px;
-    vertical-align: middle; }
-
-/* line 432, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-.request-service-btn {
-  display: inline-block;
-  height: 60px;
-  width: 225px;
-  background-color: #525d67;
-  line-height: 60px;
-  font-size: 1.2em;
-  color: #ffffff;
-  text-align: center;
-  width: 225px;
-  float: right; }
-  /* line 443, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-  .request-service-btn img {
-    margin-top: 5px;
-    margin-right: 10px;
-    vertical-align: middle; }
-
-/* line 450, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-.product-heightlight {
-  margin-top: 20px; }
-  /* line 452, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-  .product-heightlight .title {
-    margin-top: 20px;
-    font-size: 1.6em;
-    line-height: normal;
-    margin-bottom: 10px;
-    color: #525d67; }
-  /* line 459, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-  .product-heightlight .content {
-    color: #353535;
-    font-size: 1.1em;
-    line-height: 1.5em; }
-
-/* line 466, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-.hl-right {
-  margin-left: 20px; }
-
-/* line 469, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-.hl-left {
-  margin-right: 20px; }
-
-/* line 473, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-.product-water {
-  background-color: #f9f9f9;
-  padding: 30px;
-  border: 1px solid #b4b4b4;
-  margin: 60px 0; }
-  /* line 478, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-  .product-water .title {
-    color: #ae0c2a;
-    font-size: 1.5em;
-    margin-bottom: 10px; }
-  /* line 483, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-  .product-water ul {
-    margin-top: 20px; }
-  /* line 486, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-  .product-water li {
-    padding: 10px 0px; }
-    /* line 488, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-    .product-water li .water-img {
-      height: 95px;
-      vertical-align: top;
-      display: inline-block; }
-    /* line 494, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-    .product-water li .water-content {
-      padding-left: 20px;
-      padding-top: 20px;
-      line-heig2t: 25px;
+  /* line 330, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  .content .content-nav {
+    border-bottom: 1px solid #eaeaea;
+    height: 84px;
+    margin-bottom: 30px; }
+    /* line 334, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .content .content-nav .content-nav-title {
+      line-height: 84px;
       display: inline-block;
-      color: #525d67; }
-
-/* line 506, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-.product-content-full strong {
-  color: #525d67;
-  font-size: 1.4em; }
-/* line 510, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
-.product-content-full p {
-  margin-bottom: 20px;
-  color: #353535; }
+      font-size: 25px; }
+    /* line 340, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .content .content-nav .content-nav-menu {
+      line-height: 84px;
+      display: inline-block; }
+      /* line 344, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+      .content .content-nav .content-nav-menu li {
+        float: left; }
+        /* line 346, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+        .content .content-nav .content-nav-menu li:last-child:after {
+          content: "";
+          margin: 0; }
+        /* line 350, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+        .content .content-nav .content-nav-menu li:after {
+          content: "/";
+          margin: 0 10px; }
+  /* line 358, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  .content .content-news {
+    border: 1px solid #eaeaea;
+    padding: 50px 25px;
+    background: #ffffff; }
+    /* line 362, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .content .content-news .content-news-left {
+      margin-right: -20px; }
+      /* line 364, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+      .content .content-news .content-news-left li {
+        position: relative;
+        border-bottom: 1px solid #c3142d;
+        padding: 20px 0 20px 50px; }
+        /* line 368, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+        .content .content-news .content-news-left li img {
+          left: 0;
+          top: 25px;
+          position: absolute; }
+        /* line 373, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+        .content .content-news .content-news-left li .text-title {
+          font-size: 16px; }
+    /* line 378, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .content .content-news .content-news-right {
+      border-left: 1px solid #c3142d;
+      padding: 0 25px;
+      min-height: 400px; }
+      /* line 382, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+      .content .content-news .content-news-right h1.text-title {
+        font-size: 25px;
+        margin-bottom: 20px; }
 
 /*# sourceMappingURL=main.css.map */
