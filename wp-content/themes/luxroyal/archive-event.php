@@ -1,7 +1,5 @@
 <?php include('header.inc.php') ?>
 
-
-
 <?php if(have_posts()): 
 	while(have_posts()):
 		the_post();
@@ -11,6 +9,7 @@
 	<h4><?php the_title(); ?></h4>
 	<p><?php the_excerpt(); ?></p>
 	<?php the_date('d M Y') ?>
+	<?php the_category() ?>
 </a>
 <?php endwhile;endif; ?>
 

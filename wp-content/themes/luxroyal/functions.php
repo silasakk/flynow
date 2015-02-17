@@ -13,7 +13,7 @@
 					), 
 					array('supports' => array('title', 'editor', 'thumbnail','excerpt') ,'has_archive'   => true));
 
-		//$news->register_taxonomy('category');
+		$news->register_taxonomy('category');
 
 		/************************register Article***************************/
 		$article = new CPT('article',array('supports' => array('title', 'editor', 'thumbnail','excerpt')));
