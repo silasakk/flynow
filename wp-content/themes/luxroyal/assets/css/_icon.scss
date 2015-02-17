@@ -1,0 +1,133 @@
+.uicon{
+	display: inline-block;
+	background-position: top center !important;
+	background-repeat: no-repeat !important;
+	
+	
+	
+	
+	
+}
+.uicon.user-click{
+	background: url(../img/user_icon_click.png);
+	width: 19px;
+	height: 23px;
+}
+
+.uicon.user-course-icon{
+	background: url(../img/user_icon_course.png);
+	width: 29px;
+	height: 39px;
+}
+.active .uicon.user-course-icon,
+li:hover .uicon.user-course-icon{
+	background: url(../img/user_icon_course_active.png);
+}
+.uicon.user-static{
+	width: 37px;
+	height: 37px;
+	background: url(../img/user_icon_static.png);
+}
+.active .uicon.user-static,
+li:hover .uicon.user-static{
+	background: url(../img/user_icon_static_active.png);
+}
+.uicon.user-setting{
+	width: 38px;
+	height: 38px;
+	background: url(../img/user_icon_setting.png);
+}
+.active .uicon.user-setting,
+li:hover .uicon.user-setting{
+	background: url(../img/user_icon_setting_active.png);
+}
+.uicon.user-comition{
+	width: 19px;
+	height: 15px;
+	background: url(../img/user_icon_cost.png);
+}
+.uicon.user-graph{
+	width: 18px;
+	height: 17px;
+	background: url(../img/user_icon_salary.png);
+}
+
+.uicon.user-student{
+	width: 28px;
+	height: 16px;
+	background: url(../img/user_icon_membertype.png);
+}
+
+.uicon.user-download-date{
+	width: 17px;
+	height: 16px;
+	background: url(../img/user_icon_downloaddate.png);
+}
+
+
+
+.uicon.tutor-course-header{
+	width: 34px;
+	height: 35px;
+	background: url(../img/tutor_course_icon.png);
+}
+.uicon.tutor-course{
+	width: 36px;
+	height: 48px;
+	background: url(../img/tutor_book_icon.png);
+	
+}
+.uicon.tutor-video-icon{
+	width: 25px;
+	height: 17px;
+	background: url(../img/tutor_video_icon.png);
+}
+.uicon.tutor-blog-header{
+	width: 25px;
+	height: 32px;
+	background: url(../img/tutor_blog_icon.png);
+}
+.uicon.tutor-blog{
+	width: 36px;
+	height: 36px;
+	background: url(../img/tutor_blog_icon2.png);
+}
+
+
+.uicon.course-main-icon{
+	width: 42px;
+	height: 49px;
+	background: url(../img/course_header_icon.png);
+}
+
+
+.uicon.learn-author-icon{
+	width: 23px;
+	height: 23px;
+	background: url(../img/learn_author_icon.png);
+}
+
+.uicon.learn-video-count-icon{
+	width: 23px;
+	height: 23px;
+	background: url(../img/learn_video_icon.png);
+}
+
+
+.uicon.static-calendar{
+	width: 27px;
+	height: 26px;
+	background: url(../img/static_calendar.png);
+}
+
+.uicon.static-circle-graph{
+	width: 26px;
+	height: 25px;
+	background: url(../img/static_circle_graph.png);
+}
+
+.uicon.static-get-link-icon{
+	width: 29px;
+	height: 29px;
+	background: url(../img/static_getlink.png);
+}

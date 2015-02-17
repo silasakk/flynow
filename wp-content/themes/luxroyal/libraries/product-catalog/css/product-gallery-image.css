@@ -1,0 +1,38 @@
+#product-gallery-image-container li {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #AAA;;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    
+}
+#product-gallery-image-container li:hover a{
+
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background: #333333;
+    color: #ffffff;
+    font-size: 10px;
+    z-index: 2;
+    padding: 5px;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    text-decoration: none;
+
+}
+#product-gallery-image-container li a{
+
+    display: none;
+
+}
+#product-gallery-image-container img {
+
+   
+
+}
+

@@ -1,0 +1,16 @@
+.tb-product-hl td{
+	vertical-align: top;
+	text-align: center;
+}
+.del-hl{
+	color: #FFF !important;
+	border-color: #9B4545 !important;
+	background: none repeat scroll 0% 0% #BD0D0D !important;
+	box-shadow: 0px 1px 0px #F00 inset, 0px 1px 0px rgba(0, 0, 0, 0.08) !important;
+
+}
+
+.mydrag{
+
+	border: dashed 3px  #666 !important;
+}

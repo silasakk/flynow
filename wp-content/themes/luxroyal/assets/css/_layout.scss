@@ -1,0 +1,126 @@
+$grid: 12;
+$max-width: 1000;
+
+
+
+@for $i from 1 through $grid {
+  .col-#{$i} { width: ((100%/$grid)*$i) !important; 
+	  display: inline-block; 
+	margin-right: -4px; 
+	vertical-align: top;
+	padding: 0 10px;
+  }
+}
+
+@for $i from 1 through $grid {
+  .col-offset-#{$i} { 
+  	margin-left: ((100%/$grid)*$i) !important; 
+  	padding: 0 10px;
+  }
+}
+
+[class^="col-"]{
+	display: inline-block; 
+	margin-right: -4px; 
+	vertical-align: top;
+}
+
+.container{
+	width: 100%;
+	max-width: $max-width+0px;
+	margin: auto;
+}
+
+.row{
+	display: block;
+	clear: both;
+	margin: 0 -15px;
+}
+
+*{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;	
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email']{
+	display: block;
+	width: 100%;
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	padding: 8px;
+	margin: 0;
+	font-size: 13px;
+	position: relative;
+}
+
+textarea{
+	display: block;
+	width: 100%;
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	padding: 8px;
+	margin: 0;
+	font-size: 13px;
+	position: relative;
+}
+
+.inline{
+	display: inline-block;
+}
+
+.no-background{
+	background: none !important;
+}
+
+.no-margin{
+	margin: 0 !important;
+}
+
+.pull-left{ 
+	float: left !important;
+}
+.pull-right{
+	float: right !important;
+}
+
+.left{
+	text-align: left !important;
+}
+
+.right{
+	text-align: right !important;
+}
+
+.center{
+	text-align: center !important;
+}
+
+.tab{
+	display: none;
+}
+
+.tab.active{
+	display: block;
+}
+
+@media (max-width: 767px) {
+	@for $i from 1 through $grid {
+	  .col-sm-#{$i} { width: ((100%/$grid)*$i) !important; }
+	}
+    .hide-mobile{
+        display: none !important;
+    }
+}
