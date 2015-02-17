@@ -1,18 +1,19 @@
 <?php 
 	require_once( get_template_directory() . '/libraries/init.php' );
 	
+
 	function lux_custom_post_type() {
 
 		/************************register News & Event***************************/
 		$news = new CPT(array(
-					    'post_type_name' => 'news_event',
-					    'singular' => 'News',
-					    'plural' => 'News',
-					    'slug' => 'news_event'
+					    'post_type_name' => 'event',
+					    'singular' => 'event',
+					    'plural' => 'events',
+					    'slug' => 'events'
 					), 
-					array('supports' => array('title', 'editor', 'thumbnail','excerpt')));
+					array('supports' => array('title', 'editor', 'thumbnail','excerpt') ,'has_archive'   => true));
 
-		$news->register_taxonomy('category');
+		//$news->register_taxonomy('category');
 
 		/************************register Article***************************/
 		$article = new CPT('article',array('supports' => array('title', 'editor', 'thumbnail','excerpt')));
