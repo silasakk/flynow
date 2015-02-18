@@ -15,6 +15,7 @@
 
 		$news->register_taxonomy('category');
 
+
 		/************************register Article***************************/
 		$article = new CPT('article',array('supports' => array('title', 'editor', 'thumbnail','excerpt')));
 
@@ -43,7 +44,6 @@
 
 	}
 	add_action( 'init', 'lux_custom_post_type', 0 );
-    
 
 
 	function lux_scripts() {
