@@ -975,7 +975,7 @@ hr {
       .content .content-news .content-news-right h1.text-title {
         font-size: 25px;
         margin-bottom: 20px; }
-  /* line 392, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 393, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .content .tag-list li {
     border: 1px solid #aaaaaa;
     height: 40px;
@@ -984,30 +984,61 @@ hr {
     float: left;
     margin-right: 10px;
     margin-bottom: 30px; }
-    /* line 401, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 402, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     .content .tag-list li a {
       display: inline-block;
       padding: 0 15px; }
-    /* line 405, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 406, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     .content .tag-list li:hover a {
       color: #c3142d; }
-    /* line 409, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 410, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     .content .tag-list li:hover {
       border: 1px solid #c3142d; }
   /* line 417, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  .content .cat-blog {
+    height: 50px;
+    line-height: 50px;
+    font-size: 32px;
+    color: #3b4a58;
+    display: inline-block;
+    margin-right: 20px;
+    float: left; }
+  /* line 427, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  .content .cat-list {
+    display: inline-block;
+    float: left; }
+    /* line 430, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .content .cat-list li {
+      border: 1px solid #aaaaaa;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      color: #3b4a58; }
+      /* line 440, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+      .content .cat-list li a {
+        display: inline-block;
+        padding: 0 15px; }
+      /* line 444, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+      .content .cat-list li:hover a {
+        color: #ffffff;
+        background: #3b4a58; }
+  /* line 454, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .content .news-list li {
     margin-bottom: 30px; }
-    /* line 421, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 458, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     .content .news-list li .con-warp {
       height: 0;
       padding-bottom: 56%;
       position: relative;
       overflow: hidden; }
-    /* line 427, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 464, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     .content .news-list li img {
       width: 100%;
       height: auto; }
-    /* line 431, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 468, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     .content .news-list li .caption {
       cursor: pointer;
       color: #ffffff;
@@ -1021,42 +1052,42 @@ hr {
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
       zoom: 1;
       width: 100%; }
-      /* line 445, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+      /* line 482, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
       .content .news-list li .caption h2 {
         font-size: 25px;
         margin-bottom: 5px; }
-      /* line 449, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+      /* line 486, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
       .content .news-list li .caption .dtl {
         transition: all 0.2s;
         margin-bottom: 10px;
         overflow: hidden;
         height: 0;
         opacity: 0; }
-      /* line 458, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+      /* line 495, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
       .content .news-list li .caption:hover .dtl {
         opacity: 1;
         display: block;
         height: 105px; }
-    /* line 471, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 508, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     .content .news-list li.xxx .con-warp {
       padding-bottom: 116%; }
 
-/* line 485, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 522, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .news-banner {
   background: url(images/bg-news.png) center center no-repeat;
   height: 245px;
   width: 100%; }
 
-/* line 494, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 531, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .blog-top .con-warp {
   height: 530px;
   margin-bottom: 30px;
   position: relative; }
-  /* line 499, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 536, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .blog-top .con-warp img {
     width: 100%;
     height: auto; }
-  /* line 503, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 540, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .blog-top .con-warp .caption {
     position: absolute;
     height: 151px;
@@ -1066,60 +1097,66 @@ hr {
     padding: 20px 10px;
     text-align: center;
     color: #ffffff; }
-    /* line 512, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 549, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     .blog-top .con-warp .caption h1 {
       color: #e60c35;
       font-size: 22px;
       margin-bottom: 15px; }
-    /* line 517, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 554, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     .blog-top .con-warp .caption p {
       margin-bottom: 15px; }
-    /* line 520, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 557, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     .blog-top .con-warp .caption span {
       margin-right: 50px; }
-/* line 525, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 562, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .blog-top .blog-recent {
   background-color: #3b4a58;
   padding: 30px 10px; }
-  /* line 529, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 566, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .blog-top .blog-recent h1 {
     text-align: center;
     color: #f7274f;
     font-size: 16px;
     margin-bottom: 30px; }
-  /* line 535, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 572, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .blog-top .blog-recent li {
     font-size: 12px;
     position: relative;
     padding-left: 80px;
     color: #ffffff;
     margin-bottom: 51px; }
-    /* line 541, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 578, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     .blog-top .blog-recent li img {
       left: 0;
       position: absolute; }
-    /* line 547, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 584, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     .blog-top .blog-recent li .title {
       color: #e60c35; }
-/* line 552, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 589, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .blog-top .blog-con {
   border: 1px solid #dadada;
   background-color: #ffffff;
   margin-bottom: 30px;
   padding: 50px; }
-  /* line 557, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 594, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .blog-top .blog-con h1 {
     font-size: 18px;
     margin-bottom: 30px; }
-/* line 563, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 600, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .blog-top .blog-relate-title {
   font-size: 18px;
   margin-bottom: 30px; }
 
-/* line 570, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+/* line 607, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
 .blog-relate2-item {
-  position: relative; }
-  /* line 573, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  position: relative;
+  max-height: 327px;
+  overflow: hidden; }
+  /* line 611, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  .blog-relate2-item img {
+    width: 100%;
+    height: auto; }
+  /* line 615, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .blog-relate2-item .caption {
     position: absolute;
     width: 100%;
@@ -1132,24 +1169,154 @@ hr {
     line-height: 35px;
     background-color: rgba(195, 20, 45, 0.8);
     color: #ffffff; }
-  /* line 586, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  /* line 628, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
   .blog-relate2-item .caption-bar {
     background: #3b4a58; }
-    /* line 588, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 630, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     .blog-relate2-item .caption-bar span {
       margin-right: 5px; }
-      /* line 590, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+      /* line 632, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
       .blog-relate2-item .caption-bar span i {
         margin-right: 10px; }
-    /* line 595, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 637, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     .blog-relate2-item .caption-bar span:last-child {
       float: right; }
-    /* line 599, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 641, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     .blog-relate2-item .caption-bar .sc {
       color: #e60c35; }
-    /* line 602, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    /* line 644, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
     .blog-relate2-item .caption-bar .readmore a {
       border: 1px solid #ffffff;
       padding: 5px 2px; }
+
+/* line 651, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+.blog-relate3-item {
+  position: relative;
+  max-height: 327px;
+  overflow: hidden;
+  margin-bottom: 30px; }
+  /* line 656, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  .blog-relate3-item img {
+    display: block;
+    width: 100%;
+    height: auto; }
+  /* line 661, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  .blog-relate3-item .div-hover {
+    opacity: 0;
+    transition: all 0.2s; }
+  /* line 666, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  .blog-relate3-item:hover .div-hover {
+    opacity: 1; }
+  /* line 669, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  .blog-relate3-item .content-hover {
+    background: rgba(195, 20, 45, 0.8);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    text-align: center;
+    padding: 40px 60px;
+    color: #ffffff; }
+    /* line 679, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .blog-relate3-item .content-hover h1 {
+      font-size: 24px;
+      margin-bottom: 10px; }
+    /* line 683, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .blog-relate3-item .content-hover .date {
+      margin-bottom: 30px; }
+    /* line 686, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .blog-relate3-item .content-hover .con {
+      text-align: left;
+      height: 110px;
+      overflow: hidden; }
+  /* line 693, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  .blog-relate3-item .caption {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 46px;
+    overflow: hidden;
+    font-size: 12px;
+    padding: 0 10px;
+    line-height: 46px;
+    background-color: rgba(195, 20, 45, 0.8);
+    color: #ffffff; }
+  /* line 706, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  .blog-relate3-item .caption-bar {
+    background: #3b4a58;
+    font-size: 14px; }
+    /* line 709, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .blog-relate3-item .caption-bar span {
+      text-align: center; }
+      /* line 711, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+      .blog-relate3-item .caption-bar span i {
+        margin-right: 10px; }
+    /* line 716, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .blog-relate3-item .caption-bar span:last-child {
+      text-align: right; }
+    /* line 720, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .blog-relate3-item .caption-bar .sc {
+      font-size: 20px;
+      color: #e60c35; }
+    /* line 724, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .blog-relate3-item .caption-bar .readmore a {
+      border: 1px solid #ffffff;
+      padding: 7px 5px 5px 5px; }
+
+/* line 732, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+.blog-list-feature {
+  height: 560px;
+  margin: 0 -10px;
+  margin-bottom: 30px; }
+  /* line 736, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  .blog-list-feature .image-feature {
+    margin-right: -10px;
+    overflow: hidden; }
+    /* line 740, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .blog-list-feature .image-feature img {
+      height: 560px;
+      max-width: none; }
+  /* line 745, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+  .blog-list-feature .content-feature {
+    margin-left: -10px;
+    background-color: #313f4b;
+    padding: 70px 50px;
+    font-size: 16px;
+    color: #ffffff;
+    height: 560px;
+    position: relative; }
+    /* line 753, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .blog-list-feature .content-feature .bar {
+      position: absolute;
+      height: 44px;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center; }
+      /* line 760, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+      .blog-list-feature .content-feature .bar .bar_left {
+        display: inline-block;
+        background: #c3142d;
+        width: 35%;
+        float: left;
+        height: inherit;
+        line-height: 44px;
+        padding: 0 20px; }
+      /* line 769, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+      .blog-list-feature .content-feature .bar .bar_right {
+        float: left;
+        display: inline-block;
+        background: #272d37;
+        width: 65%;
+        height: inherit;
+        padding: 0 20px;
+        line-height: 44px; }
+    /* line 779, /Users/silasaklawong/Desktop/LUX Resource/LUX HTML/css/main.scss */
+    .blog-list-feature .content-feature h1 {
+      font-size: 26px;
+      color: #fd2424;
+      margin-bottom: 30px; }
 
 /*# sourceMappingURL=main.css.map */
