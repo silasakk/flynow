@@ -17,7 +17,13 @@
 
 
 		/************************register Article***************************/
-		$article = new CPT('article',array('supports' => array('title', 'editor', 'thumbnail','excerpt')));
+		$article = new CPT(array(
+						    'post_type_name' => 'blog',
+						    'singular' => 'blog',
+						    'plural' => 'blogs',
+						    'slug' => 'blogs'
+						),
+						array('supports' => array('title', 'editor', 'thumbnail','excerpt'),'has_archive'   => true));
 
 		$article->register_taxonomy('category');
 
@@ -95,5 +101,26 @@
 	  return $buttons;
 	}
 	add_filter("mce_buttons", "enable_more_buttons");
+
+	function tc_handle_upload_prefilter($file)
+	{
+
+		if(get_post_type($_REQUEST['post_id']) == 'event'){
+		    $img=getimagesize($file['tmp_name']);
+		    $minimum = array('width' => '600', 'height' => '600');
+		    $width= $img[0];
+		    $height =$img[1];
+
+		    if ($width < $minimum['width'] )
+		        return array("error"=>"Image dimensions are too small. Minimum width is {$minimum['width']}px. Uploaded image width is $width px");
+
+		    elseif ($height <  $minimum['height'])
+		        return array("error"=>"Image dimensions are too small. Minimum height is {$minimum['height']}px. Uploaded image height is $height px");
+		    else
+		        return $file; 
+		}
+    	return $file;
+	}
+	add_filter('wp_handle_upload_prefilter','tc_handle_upload_prefilter');
 	
 ?>
