@@ -62,6 +62,7 @@
                         if($the_query->have_posts()): 
                         while($the_query->have_posts()):
                             $the_query->the_post();
+
                     ?>
                         <li class="col-6">
                             <div class="blog-relate2-item">

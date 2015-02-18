@@ -27,6 +27,30 @@
 
 		$article->register_taxonomy('category');
 
+		function blog_feature_metabox( $meta_boxes ) {
+
+		    $prefix = '_cmb_'; // Prefix for all fields
+		    $meta_boxes['feature'] = array(
+		        'id' => 'feature',
+		        'title' => 'Feature',
+		        'pages' => array('blog'), // post type
+		        'context' => 'side',
+		        'priority' => 'low',
+		        'show_names' => true, // Show field names on the left
+		        'fields' => array(
+		            array(
+					    'name' => 'Feature',
+					    'desc' => 'this is feature',
+					    'id' => $prefix . 'feature',
+					    'type' => 'checkbox'
+					),
+		        ),
+		    );
+
+		    return $meta_boxes;
+		}
+		add_filter( 'cmb_meta_boxes', 'blog_feature_metabox' );
+
 		/************************register How To***************************/
 		$howto = new CPT(array(
 						    'post_type_name' => 'howto',
@@ -122,5 +146,7 @@
     	return $file;
 	}
 	add_filter('wp_handle_upload_prefilter','tc_handle_upload_prefilter');
+
+	
 	
 ?>
