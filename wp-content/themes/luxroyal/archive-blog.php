@@ -41,24 +41,26 @@
             <?php 
             $args = array(
                     "post_type"         => 'blog',
-                    "limit"             => '1'
+                    "posts_per_page"    => '-1',
                     );
                 // var_dump($args);
             // The Query
             $the_query = new WP_Query( $args );
-
                 if($the_query->have_posts()): 
-                    $the_query->the_post();
+                    $i = 0;
+                    while($the_query->have_posts()):
+                        $the_query->the_post();
 
-                    $key_1_value = get_post_meta( get_the_ID(), '_cmb_feature', true );
-                    // check if the custom field has a value
-                    if( ! empty( $key_1_value )) :
+                        $key_1_value = get_post_meta( get_the_ID(), '_cmb_feature', true );
+                        // check if the custom field has a value
+                        if( ! empty( $key_1_value) && $i == 0) :
+                            $i = 1;
                      
             ?>
             <a href="<?php echo get_the_permalink(); ?>">
                 <div class="col-6">
                     <div class="image-feature">
-                        <?php echo get_the_post_thumbnail(get_the_ID(), 'thumbnail' ) ?>
+                        <?php echo get_the_post_thumbnail(get_the_ID() ) ?>
                     </div>
                 </div>
                 <div class="col-6">
@@ -76,7 +78,7 @@
                     </div>
                 </div>
             </a>
-            <?php endif;endif ?>
+            <?php $i++;endif;endwhile;endif ?>
         </div>
         
         <div class="blog-relate3">
@@ -84,6 +86,7 @@
                 <?php 
                 $args = array(
                         "post_type"         => 'blog',
+                        "posts_per_page"    => '-1',
                         );
                     // var_dump($args);
                 // The Query

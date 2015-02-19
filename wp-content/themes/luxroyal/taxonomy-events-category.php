@@ -1,6 +1,14 @@
 <?php include('header.inc.php') ?>
 <?
-	var_dump(is_post_type_archive( "blogs" ));die;
+	$post_type = get_post_type();
+	var_dump($post_type);
+// 	$post_types = get_post_types( '', 'names' ); 
+
+// foreach ( $post_types as $post_type ) {
+
+//    echo '<p>' . $post_type . '</p>';
+// }
+	die;
 ?>
 <div class="news-banner"></div>
 <div class="content">

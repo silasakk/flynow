@@ -49,19 +49,36 @@
             <h2>WHAT NEWS</h2>
         </div>
         <ul class="listnews">
-            <li class="col-8 col-sm-12">
+            <?php 
+            $args = array(
+                    "post_type"     => 'event',
+                    "posts_per_page"         => '4',
+                    'orderby'       => 'id',
+                    'order'         => 'DESC',
+                    );
+                // var_dump($args);
+            // The Query
+            $the_query = new WP_Query( $args );
+
+                if($the_query->have_posts()):
+                $i = 1;
+                while($the_query->have_posts()):
+                    $the_query->the_post();
+            ?>
+            <li class="col-<?php echo ($i==1 || $i==3)? '8':'4' ?> col-sm-12">
                 <div class="thumb-news">
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/news1.png">
+                    <?php echo get_the_post_thumbnail(get_the_ID(), 'thumbnail' ) ?>
                     <div class="over-title">
-                        <div class="thumb-news-title">Lux AWARDS 2014</div>
-                        <div class="thumb-news-dtl">In Thailand, right in the historical</div>
+                        <div class="thumb-news-title"><?php the_title(); ?></div>
+                        <div class="thumb-news-dtl"><?php the_excerpt(); ?></div>
                         
                     </div>
-                    <div class="bg-bl"></div>
+                    <div class="bg-<?php echo ($i==1 || $i==3)? 'bl':'rd' ?>"></div>
                     
                 </div>
             </li>
-            <li class="col-4 col-sm-12">
+            <?php $i++;endwhile;endif ?>
+            <!-- <li class="col-4 col-sm-12">
                 <div class="thumb-news">
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/news2.png">
                     <div class="over-title">
@@ -97,7 +114,7 @@
                     <div class="bg-bl"></div>
 
                 </div>
-            </li>
+            </li> -->
             
         </ul>
     </div>
