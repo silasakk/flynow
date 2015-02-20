@@ -35,17 +35,17 @@
         <div class="clearfix"></div>
         <div class="blog-list-feature">
             <?php 
-            $args = array(
-                    "post_type"         => 'blog',
-                    "posts_per_page"    => '-1',
-                    );
-                // var_dump($args);
-            // The Query
-            $the_query = new WP_Query( $args );
-                if($the_query->have_posts()): 
+            // $args = array(
+            //         "post_type"         => 'blog',
+            //         "posts_per_page"    => '-1',
+            //         );
+            //     // var_dump($args);
+            // // The Query
+            // $the_query = new WP_Query( $args );
+                if(have_posts()): 
                     $i = 0;
-                    while($the_query->have_posts()):
-                        $the_query->the_post();
+                    while(have_posts()):
+                        the_post();
 
                         $key_1_value = get_post_meta( get_the_ID(), '_cmb_feature', true );
                         // check if the custom field has a value
@@ -80,17 +80,17 @@
         <div class="blog-relate3">
             <ul>
                 <?php 
-                $args = array(
-                        "post_type"         => 'blog',
-                        "posts_per_page"    => '-1',
-                        );
-                    // var_dump($args);
-                // The Query
-                $the_query = new WP_Query( $args );
+                // $args = array(
+                //         "post_type"         => 'blog',
+                //         "posts_per_page"    => '-1',
+                //         );
+                //     // var_dump($args);
+                // // The Query
+                // $the_query = new WP_Query( $args );
 
-                    if($the_query->have_posts()): 
-                        while($the_query->have_posts()):
-                            $the_query->the_post();
+                    if(have_posts()): 
+                        while(have_posts()):
+                            the_post();
 
                             $key_1_value = get_post_meta( get_the_ID(), '_cmb_feature', true );
                             // check if the custom field has a value

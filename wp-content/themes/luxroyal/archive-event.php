@@ -21,24 +21,18 @@
 					$segments = explode('/', $_SERVER['REQUEST_URI_PATH']); 
 			?>
             <li class="<?php echo ($segments[2]=='events' && !$segments[3])? 'active':'' ?>"><a href="/flynow/events">ALL</a></li>
-            <?php
-				 $categories = get_terms( 'category', array(
-									 	'orderby'    => 'count',
-									 	'hide_empty' => 0,
-									 	'exclude'    => array(1), 
-									 ) );
-				$output = '';
-				// var_dump($categories);
-				if($categories){
-					foreach($categories as $category) {
-						$class_active = ($segments[2]=='category' && $segments[3]==$category->slug)? 'active':'';
-						$output .= '<li class="'.$class_active.'"><a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '">'.$category->name.'</a></li>';
-					}
-				echo $output;
-				}
+			<?php 
+				$args = array('hide_empty' => 0) ;
+
+                $terms = get_terms( 'event_category',$args);
+                if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
+                    foreach ( $terms as $term ) {
+                        $term_list = '<a href="' . get_term_link( $term ) . '" title="' . sprintf( __( 'View all post filed under %s', 'my_localization_domain' ), $term->name ) . '">' . $term->name . '</a>';
+						$class_active = ($segments[2]=='event_category' && $segments[3]==$term->name)? 'active':'';
+                    	echo '<li class="'.$class_active.'">'.$term_list.'</li>';
+                    }
+                }
 			?>
-            <!-- <li><a href="#">NEWS</a></li>
-            <li><a href="#">EVENTS</a></li> -->
         </ul>
         <div class="clearfix"></div>
         <ul class="news-list">
