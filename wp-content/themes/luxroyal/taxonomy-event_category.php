@@ -28,7 +28,7 @@
                 if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
                     foreach ( $terms as $term ) {
                         $term_list = '<a href="' . get_term_link( $term ) . '" title="' . sprintf( __( 'View all post filed under %s', 'my_localization_domain' ), $term->name ) . '">' . $term->name . '</a>';
-                        $class_active = ($segments[2]=='event_category' && $segments[3]==$term->name)? 'active':'';
+                        $class_active = ($segments[2]=='event_category' && $segments[3]==$term->slug)? 'active':'';
                         echo '<li class="'.$class_active.'">'.$term_list.'</li>';
                     }
                 }
