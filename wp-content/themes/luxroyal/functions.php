@@ -162,4 +162,63 @@
 	}
 	add_filter('wp_handle_upload_prefilter','tc_handle_upload_prefilter');
 
+	/* custom field about us */
+	function be_sample_metaboxes2( $meta_boxes ) {
+	    $prefix = '_cmb_'; // Prefix for all fields
+	    $meta_boxes['history'] = array(
+	        'id' => 'history',
+	        'title' => 'History',
+	        'pages' => array('page'), // post type
+	        'context' => 'normal',
+	        'priority' => 'high',
+	        'show_names' => true, // Show field names on the left
+	        'fields' => array(
+	            array(
+				    'name' => 'History',
+				    'desc' => '',
+				    'id' => $prefix . 'history',
+				    'type' => 'wysiwyg',
+				    'options' => array(),
+				),
+	        ),
+	    );
+	    $meta_boxes['vision'] = array(
+	        'id' => 'vision',
+	        'title' => 'Vision',
+	        'pages' => array('page'), // post type
+	        'context' => 'normal',
+	        'priority' => 'high',
+	        'show_names' => true, // Show field names on the left
+	        'fields' => array(
+	            array(
+				    'name' => 'Vision',
+				    'desc' => '',
+				    'id' => $prefix . 'vision',
+				    'type' => 'wysiwyg',
+				    'options' => array(),
+				),
+	        ),
+	    );
+	    $meta_boxes['mission'] = array(
+	        'id' => 'mission',
+	        'title' => 'Mission',
+	        'pages' => array('page'), // post type
+	        'context' => 'normal',
+	        'priority' => 'high',
+	        'show_names' => true, // Show field names on the left
+	        'fields' => array(
+	            array(
+				    'name' => 'Mission',
+				    'desc' => '',
+				    'id' => $prefix . 'mission',
+				    'type' => 'wysiwyg',
+				    'options' => array(),
+				),
+	        ),
+	    );
+
+	    return $meta_boxes;
+	}
+	add_filter( 'cmb_meta_boxes', 'be_sample_metaboxes2' );
+
 ?>
