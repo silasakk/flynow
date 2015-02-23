@@ -84,7 +84,14 @@
 						array('supports' => array('title', 'editor')));
 
 		/************************register manual***************************/
-		$manual = new CPT('manual', array('supports' => array('title', 'editor', 'thumbnail','excerpt')));
+		$manual = new CPT(array(
+						    'post_type_name' => 'manual',
+						    'singular' => 'Manual',
+						    'plural' => 'Manual',
+						    'slug' => 'manual'
+						),
+						array('supports' => array('title', 'editor','excerpt')));
+		// $manual = new CPT('manual', array('supports' => array('title', 'editor', 'thumbnail','excerpt')));
 
 
 	}
