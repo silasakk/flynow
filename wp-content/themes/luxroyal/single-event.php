@@ -59,9 +59,7 @@
 
 </div>
 
-<?php endwhile;
-else: ?>
-<?php endif ?>
+<?php endwhile;endif ?>
 
 <div class="footer-end">
     Copyright  ¬© 2015  Lux Royal(Thailand) Co.,Ltd. All Rights Reserved.

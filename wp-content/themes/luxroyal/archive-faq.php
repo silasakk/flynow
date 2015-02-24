@@ -3,9 +3,9 @@
 <div class="cus-menu">
     <div class="container">
         <ul>
-            <li class="col-3 active"><a href="http://localhost/flynow/faq">FAQ <i class="fa fa-angle-down"></i></a></li>
-            <li class="col-3"><a href="http://localhost/flynow/howto">HOW TO <i class="fa fa-angle-down"></i></a></li>
-            <li class="col-3"><a href="http://localhost/flynow/manual">MANUAL <i class="fa fa-angle-down"></i></a></li>
+            <li class="col-3 active"><a href="http://localhost/flynow/faqs">FAQ <i class="fa fa-angle-down"></i></a></li>
+            <li class="col-3"><a href="http://localhost/flynow/manuals">MANUAL <i class="fa fa-angle-down"></i></a></li>
+            <li class="col-3"><a href="http://localhost/flynow/howtos">HOW TO <i class="fa fa-angle-down"></i></a></li>
             <li class="col-3"><a href="http://localhost/flynow/requestfrom">REQUEST FORM <i class="fa fa-angle-down"></i></a></li>
         </ul>
     </div>
@@ -31,7 +31,7 @@
                 "post_type"     => 'faq',
                 // "taxonomy"      => 'category',
                 "term"          => '',
-                // "limit"         => '2',
+                // "posts_per_page"         => '2',
                 'orderby'       => 'id',
                 'order'         => 'ASC',
                 );

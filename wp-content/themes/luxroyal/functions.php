@@ -70,27 +70,27 @@
 						    'post_type_name' => 'howto',
 						    'singular' => 'How To',
 						    'plural' => 'How To',
-						    'slug' => 'howto'
+						    'slug' => 'howtos'
 						),
-						array('supports' => array('title', 'editor', 'thumbnail','excerpt')));
+						array('supports' => array('title', 'editor', 'thumbnail','excerpt') ,'has_archive'   => true));
 
 		/************************register How To***************************/
 		$faq = new CPT(array(
 						    'post_type_name' => 'faq',
 						    'singular' => 'F A Q',
 						    'plural' => 'F A Q',
-						    'slug' => 'faq'
+						    'slug' => 'faqs'
 						),
-						array('supports' => array('title', 'editor')));
+						array('supports' => array('title', 'editor') ,'has_archive'   => true));
 
 		/************************register manual***************************/
 		$manual = new CPT(array(
 						    'post_type_name' => 'manual',
 						    'singular' => 'Manual',
-						    'plural' => 'Manual',
-						    'slug' => 'manual'
+						    'plural' => 'Manuals',
+						    'slug' => 'manuals'
 						),
-						array('supports' => array('title', 'editor','excerpt')));
+						array('supports' => array('title', 'editor','excerpt') ,'has_archive'   => true));
 		// $manual = new CPT('manual', array('supports' => array('title', 'editor', 'thumbnail','excerpt')));
 
 
@@ -220,6 +220,23 @@
 				    'id' => $prefix . 'mission',
 				    'type' => 'wysiwyg',
 				    'options' => array(),
+				),
+	        ),
+	    );
+	    $meta_boxes['file'] = array(
+	        'id' => 'file',
+	        'title' => 'File',
+	        'pages' => array('manual','howto'), // post type
+	        'context' => 'normal',
+	        'priority' => 'high',
+	        'show_names' => true, // Show field names on the left
+	        'fields' => array(
+	            array(
+				    'name' => 'file',
+				    'desc' => 'Upload an image or enter an URL.',
+				    'id' => $prefix . 'file',
+				    'type' => 'file',
+				    'allow' => array( 'url', 'attachment' ) // limit to just attachments with array( 'attachment' )
 				),
 	        ),
 	    );

@@ -51,7 +51,7 @@
                             "post_type"     => 'blog',
                             "taxonomy"      => 'category',
                             "term"          => '',
-                            "limit"         => '2',
+                            "posts_per_page"         => '2',
                             'orderby'       => 'id',
                             'order'         => 'DESC',
                             );
@@ -123,7 +123,7 @@
                     <?php 
                     $args = array(
                             "post_type"     => 'blog',
-                            "limit"         => '4',
+                            "posts_per_page"         => '4',
                             'orderby'       => 'id',
                             'order'         => 'DESC',
                             );
