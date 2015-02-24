@@ -324,6 +324,7 @@ hr{
     font-size: 15px;
     padding-bottom: 30px;
     p{
+        letter-spacing: 0.6px ;
         line-height: 150%;
     }
     img{
@@ -353,6 +354,10 @@ hr{
                 &:after{
                     content : "/";
                     margin: 0 10px;
+                }
+                &:hover{
+
+                    color:#4E4D4D;
                 }
 
             }
@@ -529,21 +534,22 @@ hr{
 .blog-top {
     
     .con-warp{
-        height: 530px;
+        
         margin-bottom: 30px;
         position: relative;
         
         img{
+            display: block;
             width:100%;
             height: auto;
         }
         .caption{
-            position: absolute;
-            height: 151px;
+           
+            
             bottom: 0;
             width: 100%;
             background-color: #3b4a58;
-            padding: 20px 10px;
+            padding: 20px 30px;
             text-align: center;
             color: #ffffff;
             h1{
@@ -556,6 +562,9 @@ hr{
             }
             span{
                 margin-right: 50px;
+                i{
+                    margin-right: 20px;
+                }
             }
         }
     }
@@ -584,6 +593,9 @@ hr{
             .title{
                 color: #e60c35;
             }
+            i{
+                margin-right: 10px;
+            }
         }
     }
     .blog-con{
@@ -595,6 +607,7 @@ hr{
             font-size: 18px;
             margin-bottom: 30px;
         }
+
         
     }
     
@@ -1127,4 +1140,8 @@ hr{
     padding-left: 120px;
     padding-top: 20px;
     text-align: left;
+}
+.fb_iframe_widget {
+
+    top: -6px;
 }

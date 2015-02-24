@@ -4,17 +4,15 @@
     while(have_posts()):
         the_post();
 ?>
-
 <div class="content">
-
     <div class="content-nav">
         <div class="container">
             <div class="content-nav-title text-title">BLOG</div>
             <div class="content-nav-menu pull-right">
                 <ul>
-                    <li>HOME</li>
-                    <li>BLOG</li>
-                    <li><?php the_title(); ?></li>
+                    <li><a href="<?php echo site_url(); ?>">Home</li>
+                    <li><a href="blogs">Blog</a></li>
+                    <li><a href="<? echo the_permalink(); ?>"><?php the_titlesmall('', '...', true, '50') ?></a></li>
                 </ul>
             </div>
         </div>
@@ -23,21 +21,48 @@
         <div class="blog-top">
             <div class="col-9">
                 <div class="con-warp">
-                    <!-- <img src="images/demo-blog-1.png" /> -->
-                    <?php echo get_the_post_thumbnail(get_the_ID() ) ?>
+                    
+                    <?
+                    if ( has_post_thumbnail() )
+                        echo get_the_post_thumbnail(get_the_ID() );
+                    else
+                        echo '<img src="http://placehold.it/800x600&text=Image" alt="title" title="title" />';
+                    ?>
+
                     <div class="caption">
                         <h1><?php the_title(); ?></h1>
-                        <p>DATE / <?php the_date('dS F Y') ?></p>
                         <p>
-                            <span><i class="fa fa-bars"></i> <?php echo get_the_category()[0]->cat_name ?></span>
-                            <span>SHARE</span>
+                            
+                        
+                            <?php
+                            $terms = get_the_terms( $post->ID, 'blog_category' );
+                                                    
+                            if ( $terms && ! is_wp_error( $terms ) ) : 
+
+                                $name = array();
+
+                                foreach ( $terms as $term ) {
+                                    $name[] = '<a target="_blank" href="'.get_term_link($term).'">'.$term->name.'</a>';
+                                    $tax_query[] = $term->term_id;
+                                }
+                                                    
+                                $name = join( " , ", $name );
+
+                             ?>
+
+                            <span><i class="fa fa-bars"></i> <?php echo $name; ?></span>
+                            <?php endif; ?>
+
+                            DATE / <?php the_date('dS F Y') ?>
+                        </p>
+                            <div id="usocial"></div>
                         </p>
                     </div>
                 </div>
                 <div class="clearfix"></div>
                 <div class="blog-con">
                     <h1 class="text-title"><strong><?php the_title(); ?></strong></h1>
-                    <p><?php the_excerpt(); ?></p>
+                    <p><?php if(has_excerpt(get_the_ID())) the_excerpt(); ?></p>
                     <hr>
                     <p><?php the_content(); ?></p>
                 </div>
@@ -48,14 +73,18 @@
                     <ul>
                     <?php 
                     $args = array(
-                            "post_type"     => 'blog',
-                            "taxonomy"      => 'category',
-                            "term"          => '',
-                            "limit"         => '2',
-                            'orderby'       => 'id',
-                            'order'         => 'DESC',
-                            );
-                        // var_dump($args);
+                        'post_type' => 'blog',
+                        'posts_per_page' => '2',
+                        'orderby' => 'id',
+                        'order' => 'random',
+                        'tax_query' => array(
+                            array(
+                                'taxonomy' => 'blog_category',
+                                'field'    => 'slug',
+                                'terms'    => 'it-news',
+                            ),
+                        ),
+                    );
                     // The Query
                     $the_query = new WP_Query( $args );
 
@@ -65,28 +94,38 @@
 
                     ?>
                         <li class="col-6">
-                            <div class="blog-relate2-item">
-                                <?php echo get_the_post_thumbnail(get_the_ID() ,'thumbnail') ?>
-                                <div class="caption">
-                                    <div class="pull-left" style="width:60%"><strong><?php the_title() ?></strong></div>
-                                    <div class="pull-right center" style="width:40%"><?php echo get_the_date('d M Y') ?></div>
+                            <a href="<?php the_permalink(); ?>" >
+                                <div class="blog-relate3-item">
+                                    <?php 
+                                    if ( has_post_thumbnail() )
+                                        echo get_the_post_thumbnail(get_the_ID(),array( 70, 70));
+                                    else
+                                        echo '<img src="http://placehold.it/350&text=Image" alt="title" title="title" />';
+
+                                    ?>
+                                    <div class="caption">
+                                        <div class="pull-left" style="width:60%"><strong><?php the_title() ?></strong></div>
+                                        <div class="pull-right center" style="width:40%"><?php the_date('d m Y') ?></div>
+                                    </div>
+                                    <div class="div-hover">
+                                        <div class="content-hover">
+                                            <h1><?php the_title() ?></h1>
+                                            <p class="date"><?php the_date('dS M Y') ?></p>
+                                            <p class="con"><?php the_excerpt(); ?></p>
+                                        </div>
+                                        <div class="caption caption-bar">
+                                           
+                                            <span class="col-5">
+                                                <i class="fa fa-bars"></i> <?php echo get_the_category()[0]->cat_name ?>
+                                            </span>
+                                            <div class="col-4 readmore">
+                                                <a href="#">READ MORE</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="caption caption-bar">
-                                    <span class="sc">
-                                        <i class="fa fa-twitter"></i>
-                                        <i class="fa fa-facebook"></i>
-                                        <i class="fa fa-google-plus"></i>
-                                    </span>
-                                    
-                                    <span>
-                                        <i class="fa fa-bars"></i> <?php echo get_the_category()[0]->cat_name ?>
-                                    </span>
-                                    <span class="readmore">
-                                        <a href="#">READ MORE</a>
-                                    </span>
-                                    
-                                </div>
-                            </div>
+                            </a>
                         </li>
                     <?php endwhile;endif ?>
                        <!--  <li class="col-6">
@@ -127,8 +166,7 @@
                             'orderby'       => 'id',
                             'order'         => 'DESC',
                             );
-                        // var_dump($args);
-                    // The Query
+
                     $the_query = new WP_Query( $args );
 
                         if($the_query->have_posts()): 
@@ -136,10 +174,31 @@
                             $the_query->the_post();
                     ?>
                         <li>
-                            <?php echo get_the_post_thumbnail(get_the_ID() ,'thumbnail') ?>
-                            <p class="title"><?php the_title() ?><p>
-                            <p class="date"><?php echo get_the_date('d - F - Y') ?></p>
-                            <p><i class="fa fa-bars"></i> <?php echo get_the_category()[0]->cat_name ?></p>
+                            <a href="<? the_permalink() ?>">
+                                <?
+                                    if ( has_post_thumbnail() )
+                                        echo get_the_post_thumbnail(get_the_ID(),array( 70, 70));
+                                    else
+                                        echo '<img src="http://placehold.it/70&text=Image" alt="title" title="title" />';
+                                    ?>
+                                    <p class="title"><?php the_titlesmall('', '...', true, '40') ?><p>
+                                    <p class="date"><?php echo get_the_date('d - F - Y') ?></p>
+                                    <?php
+                                        $terms = get_the_terms( get_the_ID(), 'blog_category' );
+                                                                
+                                        if ( $terms && ! is_wp_error( $terms ) ) : 
+
+                                            $name = array();
+
+                                            foreach ( $terms as $term ) {
+                                                $name[] = '<a target="_blank" href="'.get_term_link($term).'">'.$term->name.'</a>';
+                                            }
+                                                                
+                                            $name = join( " , ", $name );
+                                     ?>
+                                    <p><i class="fa fa-bars"></i> <?php echo $name ?></p>
+                                     <?php endif; ?>        
+                            </a>
                         </li>
                     <?php endwhile;endif ?>
                     </ul>

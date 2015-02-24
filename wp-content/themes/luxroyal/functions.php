@@ -116,8 +116,17 @@
 				get_template_directory_uri() . '/assets/js/jquery/jquery.min.js'
 			);
 		wp_enqueue_script(
+				"my-angular",
+				get_template_directory_uri() . '/assets/js/angular/angular.min.js'
+			);
+		wp_enqueue_script(
 				"main-js",
 				get_template_directory_uri() . '/assets/js/main.js',
+				"my-jquery"
+			);
+		wp_enqueue_script(
+				"usocial",
+				get_template_directory_uri() . '/assets/js/usocial.js',
 				"my-jquery"
 			);
 		
@@ -228,4 +237,18 @@
 	}
 	add_filter( 'cmb_meta_boxes', 'be_sample_metaboxes2' );
 
+	function the_titlesmall($before = '', $after = '', $echo = true, $length = false) { $title = get_the_title();
+
+		if ( $length && is_numeric($length) ) {
+			$title = iconv_substr( $title, 0, $length );
+		}
+
+		if ( strlen($title)> 0 ) {
+			$title = apply_filters('the_titlesmall', $before . $title . $after, $before, $after);
+			if ( $echo )
+				echo $title;
+			else
+				return $title;
+		}
+	}
 ?>
