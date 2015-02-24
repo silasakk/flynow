@@ -73,7 +73,8 @@
                     <ul>
                     <?php 
                     $args = array(
-                        'post_type' => 'blog',
+
+                            'post_type' => 'blog',
                         'posts_per_page' => '2',
                         'orderby' => 'id',
                         'order' => 'random',
@@ -85,6 +86,7 @@
                             ),
                         ),
                     );
+
                     // The Query
                     $the_query = new WP_Query( $args );
 
@@ -162,7 +164,7 @@
                     <?php 
                     $args = array(
                             "post_type"     => 'blog',
-                            "limit"         => '4',
+                            "posts_per_page"         => '4',
                             'orderby'       => 'id',
                             'order'         => 'DESC',
                             );
