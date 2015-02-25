@@ -39,7 +39,7 @@
 						    'plural' => 'Blog Categories',
 						    'slug' => 'blog_category'
 						));
-		
+
 
 		function blog_feature_metabox( $meta_boxes ) {
 
@@ -74,7 +74,7 @@
 						),
 						array('supports' => array('title', 'editor', 'thumbnail','excerpt') ,'has_archive'   => true));
 
-		/************************register How To***************************/
+		/************************register faq***************************/
 		$faq = new CPT(array(
 						    'post_type_name' => 'faq',
 						    'singular' => 'F A Q',
@@ -93,6 +93,22 @@
 						array('supports' => array('title', 'editor','excerpt') ,'has_archive'   => true));
 		// $manual = new CPT('manual', array('supports' => array('title', 'editor', 'thumbnail','excerpt')));
 
+		/************************register Contact Us***************************/
+		$contact = new CPT(array(
+						    'post_type_name' => 'contact',
+						    'singular' => 'Contact Us',
+						    'plural' => 'Contact Us',
+						    'slug' => 'contactus'
+						),
+						array('supports' => array('title', 'excerpt'),'has_archive'   => true));
+
+		// $article->register_taxonomy('blog_category');
+		$contact->register_taxonomy(array(
+						    'taxonomy_name' => 'contact_category',
+						    'singular' => 'Contact Category',
+						    'plural' => 'Contact Categories',
+						    'slug' => 'contact_category'
+						));
 
 	}
 	add_action( 'init', 'lux_custom_post_type', 0 );
@@ -235,6 +251,40 @@
 				    'desc' => '',
 				    'id' => $prefix . 'mission',
 				    'type' => 'wysiwyg',
+				    'options' => array(),
+				),
+	        ),
+	    );
+	    $meta_boxes['tel'] = array(
+	        'id' => 'tel',
+	        'title' => 'Tel',
+	        'pages' => array('contact'), // post type
+	        'context' => 'normal',
+	        'priority' => 'high',
+	        'show_names' => true, // Show field names on the left
+	        'fields' => array(
+	            array(
+				    'name' => 'Tel',
+				    'desc' => '',
+				    'id' => $prefix . 'tel',
+				    'type' => 'text',
+				    'options' => array(),
+				),
+	        ),
+	    );
+	    $meta_boxes['fax'] = array(
+	        'id' => 'fax',
+	        'title' => 'Fax',
+	        'pages' => array('contact'), // post type
+	        'context' => 'normal',
+	        'priority' => 'high',
+	        'show_names' => true, // Show field names on the left
+	        'fields' => array(
+	            array(
+				    'name' => 'Fax',
+				    'desc' => '',
+				    'id' => $prefix . 'fax',
+				    'type' => 'text',
 				    'options' => array(),
 				),
 	        ),
