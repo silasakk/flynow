@@ -45,15 +45,15 @@
                 <div class="head-con">
                     <div id="logo"></div>
                     <div class="information">
-                        <p class="time-info">เวลาทำการวันจันทร์ - ศุกร์ เวลา 09.00 น. - 18.00 น.</p>
+                        <p class="time-info hide-mobile">เวลาทำการวันจันทร์ - ศุกร์ เวลา 09.00 น. - 18.00 น.</p>
                         <p>
-                            <img width="15" src="<?php echo get_template_directory_uri() ?>/assets/images/phone.png" />
+                            <img width="15" class="hide-mobile" src="<?php echo get_template_directory_uri() ?>/assets/images/phone.png" />
                             <strong class="hi">CALL CENTER</strong>
                             <span>(02) 381-5115</span>
                         </p>
                         <p>
-                            <img width="15" src="<?php echo get_template_directory_uri() ?>/assets/images/followus.png" />
-                            <strong class="hi hide-mobile">FOLLOW US</strong>
+                            <img width="15" class="hide-mobile" src="<?php echo get_template_directory_uri() ?>/assets/images/followus.png" />
+                            <strong class="hi">FOLLOW US</strong>
                             <span>
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/fb-icon.png" />
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/tw-icon.png" />
@@ -67,7 +67,7 @@
             <div class="clearfix"></div>
             <div id="nav">
                 <div class="container">
-                    
+                    <div class="menu-mobile" ><i class="fa fa-bars"></i> MENU</div>
                     <?php
                     wp_nav_menu( array('theme_location' => 'header-menu','container' => '') );
                     ?>

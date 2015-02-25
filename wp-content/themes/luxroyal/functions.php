@@ -120,6 +120,11 @@
 				get_template_directory_uri() . '/assets/js/angular/angular.min.js'
 			);
 		wp_enqueue_script(
+				"imgcentering",
+				get_template_directory_uri() . '/assets/js/imgcentering.min.js',
+				"my-jquery"
+			);
+		wp_enqueue_script(
 				"main-js",
 				get_template_directory_uri() . '/assets/js/main.js',
 				"my-jquery"
@@ -141,7 +146,9 @@
 	add_action( 'init', 'register_head_menu' );
 
 	/****************** Theme support *******************************/
+
 	add_theme_support( 'post-thumbnails' ); 
+	
 
 	/****************** remove default post *******************************/
 	function remove_default_post(){

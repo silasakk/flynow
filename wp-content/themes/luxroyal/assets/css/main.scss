@@ -32,7 +32,7 @@ hr{
 
 .search-field {
     float: left;
-    width: 200px !important;
+    width: 170px !important;
     background-color: #8b9299 !important;
     height: 25px;
     border: none !important;
@@ -128,6 +128,12 @@ hr{
 }
 
 #nav {
+    line-height: 53px;
+    .menu-mobile{
+        text-align: center;
+        display: none;
+        font-size: 13px;
+    }
     height: 53px;
     background-color: #c3142d;
     color: #ffffff;
@@ -140,7 +146,6 @@ hr{
         }
         a{
             font-size: 14px;
-            line-height: 53px;
             color: #ffffff;
         }
     }
@@ -321,11 +326,11 @@ hr{
     background: #f8f8f8;
     line-height: normal;
     color: #777777;
-    font-size: 15px;
+    font-size: 16px;
     padding-bottom: 30px;
     p{
         letter-spacing: 0.6px ;
-        line-height: 150%;
+        line-height: 160%;
     }
     img{
         max-width: 100%;
@@ -347,13 +352,14 @@ hr{
 
             li{
                 float: left;
-                &:last-child:after{
+                &:first-child:after{
                     content : "";
                     margin: 0;
                 }
                 &:after{
                     content : "/";
                     margin: 0 10px;
+                    float: left;
                 }
                 &:hover{
 
@@ -421,6 +427,7 @@ hr{
     }
     .cat-blog{
         height: 50px;
+        margin-bottom: 30px;
         line-height: 50px;
         font-size: 32px;
         color: #3b4a58;
@@ -447,6 +454,11 @@ hr{
                 padding: 0 15px;
             }
             &:hover a{
+                color: #ffffff;
+                background: #3b4a58;
+
+            }
+            &.active {
                 color: #ffffff;
                 background: #3b4a58;
 
@@ -699,10 +711,16 @@ hr{
     }
     
 }
+.blog-relate3{
+    margin: 0 -10px;
+}
 .blog-relate3-item {
     position: relative;
-    max-height: 327px;
+
+    height: 0;
+    padding-bottom:63.5%;
     overflow: hidden;
+    background:#aaaaaa;
     margin-bottom: 30px;
     img{
         display: block;
@@ -728,8 +746,10 @@ hr{
         padding:40px 60px;
         color: #ffffff;
         h1{
-            font-size: 24px;
+            font-size: 18px;
             margin-bottom: 10px;
+            height: 180px;
+            overflow: hidden;
         }
         .date{
             margin-bottom: 30px;
@@ -748,7 +768,7 @@ hr{
         left:0;
         height: 46px;
         overflow: hidden;
-        font-size: 12px;
+        font-size: 14px;
         padding: 0 10px;
         line-height: 46px;
         background-color: rgba(195, 20, 45, 0.8);
@@ -758,29 +778,29 @@ hr{
         background: #3b4a58;
         font-size: 14px;
         span{
-            text-align: center;
+            text-align: left;
             display: inline-block;
+            width: 70%;
             i{
                 
                 margin-right: 10px;
             }
         }
-        span:last-child{
-            text-align: right;
+        
 
-        }
-        .sc{
-            font-size: 20px;
-            color:#e60c35;
-        }
-        .readmore 
+        a.readmore 
         {
-            float: right;
-            a{
-                border: 1px solid #ffffff;
-                padding: 7px 5px 5px 5px;
+            background:#3B4A58;
+           font-size: 12px;
+           position: absolute;
+           right: 10px;
+           bottom :10px;
+           height: 25px;
+           line-height: 25px;
+           border: 1px solid #ffffff;
+           padding: 0 3px;
 
-            }
+
         }
     }
 
@@ -790,8 +810,10 @@ hr{
     height: 560px;
     margin: 0 -10px;
     margin-bottom: 30px;
+
     .image-feature{
-        
+        background:#000000;
+        height: 560px;
         margin-right: -10px;
         overflow: hidden;
         img{
@@ -807,6 +829,10 @@ hr{
         color: #ffffff;
         height: 560px;
         position: relative;
+        .exc{
+            overflow: hidden;
+            height: 300px;
+        }
         .bar{
             position: absolute;
             height: 44px;
@@ -1144,4 +1170,136 @@ hr{
 .fb_iframe_widget {
 
     top: -6px;
+}
+
+/**********************************************************************************/
+@media (max-width: 768px) {
+   .container{
+    padding : 0 20px;
+   }
+   .blog-top .blog-recent{
+    padding :20px;
+   }
+   .blog-top .blog-recent li {
+
+    padding-right: 10px;
+    .title{
+        font-size: 14px;
+    }
+
+   }
+}
+/**********************************************************************************/
+@media (max-width: 460px) {
+   .container{
+    padding : 0 5px;
+   }
+   #logo {
+    
+    width: 70px;
+    height: 45px;
+    background-size: cover;
+    }
+    #nav {
+        position: relative;
+        z-index: 2;
+        overflow: visible;
+        height: auto;
+        line-height: 45px;
+        li{
+            float: none;
+            background:#DA1733;
+        }
+        .menu{
+            display: none;
+        }
+        .menu-mobile{
+            display: block;
+
+        }
+        .menu.active{
+            display: block;
+        }
+    }
+
+    .information{
+
+        font-size: 12px;
+        strong{
+            width: 90px;
+        }
+    }
+    .content .content-nav .content-nav-menu {
+        font-size: 12px;
+        float: none !important;
+        display: block;
+        padding:0 20px;
+    }
+    .content .content-nav .content-nav-title {
+        display: block;
+        text-align: center
+    }
+    .blog-top .con-warp .caption span {
+        margin-right: 0;
+        display: block;
+        text-align: center;
+    }
+    .blog-top .con-warp .caption {
+        padding :10px;
+    }
+    .blog-top .blog-con {
+        padding :10px;
+        border:none;
+    }
+    .blog-list-feature {
+        height: auto;
+
+        .image-feature {
+            margin-right: 0;
+            height: auto;
+            img{
+
+                width: 100%;
+                height: auto;
+            }
+        }
+        .content-feature {
+            height: auto;
+            margin-left: 0;
+            padding:20px 10px;
+            h1{
+                text-align: center;
+                font-size: 18px;
+            }
+            .exc
+            {
+                height: auto;
+                margin-bottom: 100px;
+                
+                font-size: 14px;
+            }
+            .bar{
+                margin-bottom: 50px;
+                .bar_left,.bar_right{
+                    display: block;
+                    width: 100%;
+                }
+
+            }
+
+        }
+
+        
+    }
+    .blog-relate3-item .content-hover {
+        padding:20px;
+        h1{
+            height: 120px;
+        }
+    }
+    .cat-list{
+        margin-bottom: 20px;
+    }
+
+
 }

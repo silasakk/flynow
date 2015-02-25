@@ -1,4 +1,12 @@
+
 $(function(){
+	$('.menu-mobile').on('click',function(){
+		$('.menu').toggleClass('active');
+	});
+
+	$(".image-feature img").imgCentering({"forceWidth":true});
+	
+
     $('.faq-list a').on('click',function(){
         $('.faq-list li').each(function(){
             $(this).find('.num-list').removeClass('active');

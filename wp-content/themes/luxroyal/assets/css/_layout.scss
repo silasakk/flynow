@@ -116,9 +116,17 @@ textarea{
 	display: block;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 	@for $i from 1 through $grid {
 	  .col-sm-#{$i} { width: ((100%/$grid)*$i) !important; }
+	}
+    .hide-mobile{
+        display: none !important;
+    }
+}
+@media (max-width: 460px) {
+	@for $i from 1 through $grid {
+	  .col-xs-#{$i} { width: ((100%/$grid)*$i) !important; }
 	}
     .hide-mobile{
         display: none !important;
