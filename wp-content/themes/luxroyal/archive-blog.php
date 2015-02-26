@@ -6,16 +6,17 @@
             <div class="content-nav-menu pull-right">
                 <ul>
                     <li><a href="<? echo site_url() ?>">Home</a></li>
-                    <li><a href="/blogs">Blog</a></li>
+                    <li><a href="<? echo get_post_type_archive_link('blog') ?>">Blog</a></li>
                 </ul>
             </div>
         </div>
     </div>
+    <div class="clearfix"></div>
     <div class="container">
         <div class="cat-blog"><i class="fa fa-bars" style="color:red"></i> CATEGORIES</div>
         <ul class="cat-list">
             <?php  $currentterm = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );  ?>
-            <li class="<?php echo (!$currentterm->slug)? 'active':'' ?>"><a href="blogs">ALL</a></li>
+            <li class="<?php echo (!$currentterm->slug)? 'active':'' ?>"><a href="<? echo get_post_type_archive_link('blog') ?>">ALL</a></li>
             <?php 
                 $args = array('hide_empty' => 0) ;
                 $terms = get_terms( 'blog_category',$args);
@@ -49,13 +50,15 @@
         <div class="blog-list-feature">
         <? while($the_query->have_posts()):$the_query->the_post();?>
                 <div class="col-6 col-sm-12">
+                <a href="<? the_permalink() ?>">
                     <div class="image-feature">
                         <?php echo get_the_post_thumbnail(get_the_ID() ) ?>
                     </div>
+                </a>
                 </div> 
                 <div class="col-6 col-sm-12">
                     <div class="content-feature ">
-                        <h1><?php the_title() ?></h1>
+                        <h1><a href="<? the_permalink() ?>"><?php the_title() ?></h1>
                         <p class="exc"><?php echo get_the_excerpt() ?></p>
                         <div class="bar">
                             <div class="bar_left">
@@ -105,7 +108,7 @@
                             if( $key_1_value != 'on') :
                          
                 ?>
-                <li class="col-6 col-sm-12">
+                <li class="col-6  col-xs-12">
                    
                         <div class="blog-relate3-item">
                             <?php echo get_the_post_thumbnail(get_the_ID(), 'thumbnail' ) ?>

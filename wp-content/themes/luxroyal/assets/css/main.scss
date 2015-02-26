@@ -469,7 +469,10 @@ hr{
     }
     .news-list{
         li{
-           
+            &.col-4 img{
+                max-width: none;
+                width: auto;
+            }
             margin-bottom: 30px;
             
             .con-warp{
@@ -497,13 +500,15 @@ hr{
                 width: 100%;
                 
                 h2{
-                    font-size: 25px;
+                    font-size: 20px;
                     margin-bottom: 5px;
                 }
                 .dtl{
+                    margin-top: 10px;
                     transition: all 0.2s;
                     margin-bottom: 10px;
                     overflow: hidden;
+                    font-size: 14px;
                     height: 0;
                     opacity: 0;
                 }
@@ -1188,58 +1193,7 @@ hr{
     }
 
    }
-}
-/**********************************************************************************/
-@media (max-width: 460px) {
-   .container{
-    padding : 0 5px;
-   }
-   #logo {
-    
-    width: 70px;
-    height: 45px;
-    background-size: cover;
-    }
-    #nav {
-        position: relative;
-        z-index: 2;
-        overflow: visible;
-        height: auto;
-        line-height: 45px;
-        li{
-            float: none;
-            background:#DA1733;
-        }
-        .menu{
-            display: none;
-        }
-        .menu-mobile{
-            display: block;
-
-        }
-        .menu.active{
-            display: block;
-        }
-    }
-
-    .information{
-
-        font-size: 12px;
-        strong{
-            width: 90px;
-        }
-    }
-    .content .content-nav .content-nav-menu {
-        font-size: 12px;
-        float: none !important;
-        display: block;
-        padding:0 20px;
-    }
-    .content .content-nav .content-nav-title {
-        display: block;
-        text-align: center
-    }
-    .blog-top .con-warp .caption span {
+   .blog-top .con-warp .caption span {
         margin-right: 0;
         display: block;
         text-align: center;
@@ -1300,6 +1254,103 @@ hr{
     .cat-list{
         margin-bottom: 20px;
     }
+}
+/**********************************************************************************/
+@media (max-width: 460px) {
+   .container{
+    padding : 0 5px;
+   }
+   #logo {
+    
+    width: 70px;
+    height: 45px;
+    background-size: cover;
+    }
+    #nav {
+        position: relative;
+        z-index: 2;
+        overflow: visible;
+        height: auto;
+        line-height: 45px;
+        li{
+            float: none;
+            background:#DA1733;
+        }
+        .menu{
+            display: none;
+        }
+        .menu-mobile{
+            display: block;
+
+        }
+        .menu.active{
+            display: block;
+        }
+    }
+
+    .information{
+
+        font-size: 12px;
+        strong{
+            width: 90px;
+        }
+    }
+    .content .content-nav
+    {
+        margin-bottom: 60px;
+    }
+    .content .content-nav .content-nav-menu {
+        font-size: 12px;
+        float: none !important;
+        display: block;
+        margin: 0 -5px;
+        line-height: 30px;
+        text-align: center;
+        background:#cccccc;
+        
+    }
+    .content .content-nav .content-nav-menu li{
+        float: none;
+        display: inline-block;
+    }
+    .content .content-nav .content-nav-title {
+        display: block;
+        text-align: center
+    }
+    .content p {
+        font-family: sans-serif;
+        letter-spacing: 0;
+        
+        img{
+
+            margin: 20px 0;
+        }
+        strong{
+            font-family: sans-serif;
+        }
+    }
+    .blog-relate3 {
+        margin: 0;
+    }
+    .blog-list-feature {
+ 
+        margin: 0px 0 30px;
+    }
+
+    .content .content-news .content-news-right {
+        border-left: none;
+        padding:0;
+    }
+    .content .content-news .content-news-right h1.text-title {
+        font-size: 18px;
+    }
+    .content .content-news {
+        padding :50px 0px;
+    }
+    .content .content-news .content-news-left {
+        margin: 0;
+    }
+    
 
 
 }

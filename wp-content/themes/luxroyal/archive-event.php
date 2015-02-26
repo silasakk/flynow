@@ -17,30 +17,27 @@
     </div>
     <div class="container">
         <ul class="tag-list">
-        	<?php 	$_SERVER['REQUEST_URI_PATH'] = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-					$segments = explode('/', $_SERVER['REQUEST_URI_PATH']); 
-			?>
-            <li class="<?php echo ($segments[2]=='events' && !$segments[3])? 'active':'' ?>"><a href="/flynow/events">ALL</a></li>
-			<?php 
-				$args = array('hide_empty' => 0) ;
-
+            <?php  $currentterm = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );  ?>
+            <li class="<?php echo (!$currentterm->slug)? 'active':'' ?>"><a href="<? echo get_post_type_archive_link('blog') ?>">ALL</a></li>
+            <?php 
+                $args = array('hide_empty' => 0) ;
                 $terms = get_terms( 'event_category',$args);
                 if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
                     foreach ( $terms as $term ) {
-                        $term_list = '<a href="' . get_term_link( $term ) . '" title="' . sprintf( __( 'View all post filed under %s', 'my_localization_domain' ), $term->name ) . '">' . $term->name . '</a>';
-						$class_active = ($segments[2]=='event_category' && $segments[3]==$term->slug)? 'active':'';
-                    	echo '<li class="'.$class_active.'">'.$term_list.'</li>';
+                        $term_list = '<a href="' . get_term_link( $term ) . '" >' . $term->name . '</a>';
+                        $class_active = ($currentterm->slug==$term->slug)? 'active':'';
+                        echo '<li class="'.$class_active.'">'.$term_list.'</li>';
                     }
                 }
-			?>
+            ?>
         </ul>
         <div class="clearfix"></div>
         <ul class="news-list">
         	<?php 
         	$args = array(
 					"post_type" 		=> 'event',
-					"offset"			=> (@!$segments[4])? '0':''.(($segments[4]-1)*1).'',
-					"posts_per_page" 	=> '1',
+					"offset"			=> (@!$segments[3])? '0':''.(($segments[3]-1)*1).'',
+					"posts_per_page" 	=> '10',
 					);
 				// var_dump($args);
 			// The Query
@@ -54,11 +51,28 @@
             <li class="col-<?php echo ($i==2 || $i==3 || $i==6)? '4':'8' ?> col-sm-12 <?php echo ($i==2 || $i==3 || $i==6)? 'xxx':'' ?>">
             	<a href="<?php echo get_the_permalink(); ?>">
 	                <div class="con-warp">
-	                    <?php echo get_the_post_thumbnail(get_the_ID(), 'thumbnail' ) ?>
+	                    <?php echo get_the_post_thumbnail(get_the_ID(), 'full' ) ?>
 	                    <div class="caption">
 	                        <h2><?php the_title(); ?></h2>
-	                        <p class="dtl"><?php the_excerpt(); ?></p>
-	                        <p><?php echo get_the_category()[0]->cat_name ?> , <?php the_date('d M Y') ?> <span class="pull-right">- more -</span></p>
+	                        <p class="dtl"><?php echo get_the_excerpt(); ?></p>
+	                        <p>
+                                <?php
+                                        $terms = get_the_terms( get_the_ID(), 'event_category' );
+                                                                
+                                        if ( $terms && ! is_wp_error( $terms ) ) : 
+
+                                            $name = array();
+
+                                            foreach ( $terms as $term ) {
+                                                $name[] = '<a target="_blank" href="'.get_term_link($term).'">'.$term->name.'</a>';
+                                            }
+                                                                
+                                            $name = join( " , ", $name );
+                                     ?>
+                                        <span><?php echo $name ?> | </span>
+                                    <? endif; ?>
+
+                            <?php the_date('d M Y') ?> <span class="pull-right">- more -</span></p>
 	                    </div>
 
 	                </div>

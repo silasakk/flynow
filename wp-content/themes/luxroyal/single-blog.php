@@ -11,7 +11,7 @@
             <div class="content-nav-menu pull-right">
                 <ul>
                     <li><a href="<?php echo site_url(); ?>">Home</li>
-                    <li><a href="blogs">Blog</a></li>
+                    <li><a href="<? echo get_post_type_archive_link('blog') ?>">Blog</a></li>
                     <li class="hide-mobile"><a href="<? echo the_permalink(); ?>"><?php the_titlesmall('', '...', true, '30') ?></a></li>
                 </ul>
             </div>
@@ -147,30 +147,7 @@
                             
                         </li>
                     <?php endwhile;endif ?>
-                       <!--  <li class="col-6">
-                            <div class="blog-relate2-item">
-                                <img src="images/demo-relate2.png.png">
-                                <div class="caption">
-                                    <div class="pull-left" style="width:60%"><strong>LUX LUNCH NEW WEBSITE GRAND</strong></div>
-                                    <div class="pull-right center" style="width:40%">19 NOV 2014</div>
-                                </div>
-                                <div class="caption caption-bar">
-                                    <span class="sc">
-                                        <i class="fa fa-twitter"></i>
-                                        <i class="fa fa-facebook"></i>
-                                        <i class="fa fa-google-plus"></i>
-                                    </span>
-                                    
-                                    <span>
-                                        <i class="fa fa-bars"></i> ENVIRONMENT
-                                    </span>
-                                    <span class="readmore">
-                                        <a href="#">READ MORE</a>
-                                    </span>
-                                    
-                                </div>
-                            </div>
-                        </li> -->
+                       
                     </ul>
                 </div>
                 </div>

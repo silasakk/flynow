@@ -199,7 +199,7 @@
 		}
     	return $file;
 	}
-	add_filter('wp_handle_upload_prefilter','tc_handle_upload_prefilter');
+	//add_filter('wp_handle_upload_prefilter','tc_handle_upload_prefilter');
 
 	/* custom field about us */
 	function be_sample_metaboxes2( $meta_boxes ) {
