@@ -36,8 +36,9 @@
                         <a class="active btn-lang">EN</a>
                     </div>
                     <div class="head-tools">
-                        <input type="text" class="search-field" placeholder="SEARCH..." />
-                        <button class="btn-s"><i class="fa fa-search"></i></button>
+                        <?php get_search_form(); ?>
+                        <!-- <input type="text" class="search-field" placeholder="SEARCH..." />
+                        <button class="btn-s"><i class="fa fa-search"></i></button> -->
                     </div>
                 </div>
             </div>

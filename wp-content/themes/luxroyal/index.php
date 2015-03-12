@@ -1,5 +1,4 @@
 <?php include('header.inc.php') ?>
-
 		    	
 <div id="homeslider">
     <img src="<?php echo get_template_directory_uri() ?>/assets/images/LUX-Homepage-banner.jpg" style="width:100%;height:auto">
